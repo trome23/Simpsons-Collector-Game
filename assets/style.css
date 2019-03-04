@@ -1,0 +1,20 @@
+body {
+    
+    width: 100%;
+    height: 800px;
+    background-size: 100% 100%;
+    background-image: url(../assets/images/simpsons-background.jpg)
+}
+
+#instructions {
+    color: white;
+    
+}
+ .gameHeader {
+    padding: 25px 25px 25px 25px;
+    color: rgba(236, 236, 39, 0.788); 
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 50px;
+    text-decoration: underline;
+
+ }
