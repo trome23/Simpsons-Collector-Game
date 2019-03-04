@@ -8,7 +8,9 @@ body {
 
 #instructions {
     color: white;
-    
+    font-family: 'Gloria Hallelujah', cursive;
+    padding: 10px 5px 0px 20px;
+    margin-left: 20px;        
 }
  .gameHeader {
     padding: 25px 25px 25px 25px;
@@ -17,4 +19,17 @@ body {
     font-size: 50px;
     text-decoration: underline;
 
+ }
+ #random-computer-number {
+     border: solid 2px black;
+     font-size: 1.5rem;
+ }
+
+ #your-number {
+    border: solid 2px black;
+    font-size: 1.5rem;
+ }
+
+ #simpson-selections {
+    border: solid 2px black;
  }
