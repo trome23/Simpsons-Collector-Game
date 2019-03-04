@@ -23,7 +23,7 @@ body {
     font-style: italic;        
 }
 
- #random-computer-number {
+ #randomCompNumber {
      border: solid 2px black;
      font-size: 1.5rem;
      font-family: 'Gloria Hallelujah', cursive;
@@ -48,8 +48,12 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
     text-decoration: underline;
  }
- #simpson-selections {
+ .simpson-selections {
     border: solid 2px black;
     text-align: center;
     padding: 5px;
  }
+
+ footer (
+
+ )
