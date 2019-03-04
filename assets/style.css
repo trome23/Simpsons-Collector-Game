@@ -48,12 +48,12 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
     text-decoration: underline;
  }
- .simpson-selections {
+ .simpsonPics {
     border: solid 2px black;
-    text-align: center;
+    margin-left: 140px;
     padding: 5px;
  }
 
- footer (
+ footer {
 
- )
+ }
