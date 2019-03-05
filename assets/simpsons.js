@@ -11,16 +11,16 @@ console.log(computerGuess);
 $("#randomCompNumber").html("Random Number: " + computerGuess);
 
 //variables that generate random #'s for each of the Simpson Characters
-var simp1 = Math.floor(Math.random() * 12) + 1;
-var simp2 = Math.floor(Math.random() * 12) + 1;
-var simp3 = Math.floor(Math.random() * 12) + 1;
-var simp4 = Math.floor(Math.random() * 12) + 1;
+var simp1 = Math.floor(Math.random() * (12-1)) + 1;
+var simp2 = Math.floor(Math.random() * (12-1)) + 1;
+var simp3 = Math.floor(Math.random() * (12-1)) + 1;
+var simp4 = Math.floor(Math.random() * (12-1)) + 1;
 
 //Reset function to call when the game is over and needs to be reset to the start
 function reset() {
     userNumber = 0;
     $("#your-number").html("Your Number: " + userNumber);
-    var computerGuess = Math.floor(Math.random() * (120 - 19)) + 19;
+    computerGuess = Math.floor(Math.random() * (120 - 19)) + 19;
     $("#randomCompNumber").html("Random Number: " + computerGuess);
     simp1 = Math.floor(Math.random() * 12) + 1;
     simp2 = Math.floor(Math.random() * 12) + 1;
@@ -28,14 +28,15 @@ function reset() {
     simp4 = Math.floor(Math.random() * 12) + 1;
 }
 
-//Game logic with if/else statement to find out if the use has to keep playing or has won/lost
+//Game logic with if/else statement to find out if the user has to keep playing or has won/lost
 function gameStart() {
+    //if the user's combined total equals the random computer #, wins go up, function resets
     if (userNumber === computerGuess) {
         wins++;
         $("#wins").html("Wins: " + wins);
         alert("Great job, YOU WIN!");
         reset();
-    } 
+    } //if user's number is greater than the random computer #, then they lose and the game resets
     else if (userNumber > computerGuess) {
         losses++;
         $("#losses").html("Losses: " + losses);
@@ -44,6 +45,7 @@ function gameStart() {
     }
 }
 
+//creating the add event listeners, or "on clicks", to the Simpson images and pushing them to the DOM
 $("#simp1").click(function() {
     userNumber += simp1;
     $("#your-number").html("Your Number: " + userNumber);
